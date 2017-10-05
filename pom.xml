@@ -28,20 +28,13 @@
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>org.apache.maven.plugins</artifactId>
+                    <artifactId>maven-release-plugin</artifactId>
                     <version>RELEASE</version>
                     <configuration>
-                        <tagNameFormat>v@{version}</tagNameFormat>
+                        <tagNameFormat>v@{project.version}</tagNameFormat>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <releaseProfiles>releases</releaseProfiles>
                     </configuration>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-scm-plugin</artifactId>
-                            <version>RELEASE</version>
-                        </dependency>
-                    </dependencies>
                 </plugin>
             </plugins>
         </pluginManagement>
