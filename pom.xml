@@ -16,7 +16,7 @@
     <scm>
         <url>https://github.com/dmitriiz/maven-release-demo</url>
         <connection>scm:git:https://github.com/dmitriiz/maven-release-demo.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:dmitriiz/maven-release-demo.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:dmitriiz/maven-release-demo.git</developerConnection>
     </scm>
 
     <modules>
