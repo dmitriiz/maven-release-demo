@@ -15,8 +15,8 @@
         <url>https://github.com/dmitriiz/maven-release-demo</url>
         <connection>scm:git:https://github.com/dmitriiz/maven-release-demo.git</connection>
         <developerConnection>scm:git:git@github.com:dmitriiz/maven-release-demo.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <modules>
         <module>module1</module>
@@ -32,7 +32,7 @@
                     <version>RELEASE</version>
                     <configuration>
                         <tagNameFormat>v@{version}</tagNameFormat>
-                        <autoVersionSubmodules>false</autoVersionSubmodules>
+                        <autoVersionSubmodules>true</autoVersionSubmodules>
                         <releaseProfiles>releases</releaseProfiles>
                     </configuration>
                     <dependencies>
@@ -50,12 +50,12 @@
     <distributionManagement>
         <repository>
             <id>itr-releases</id>
-            <name>USE2GO Release Repository</name>
+            <name>ITR Releases Repository</name>
             <url>https://repo.itrespublica.eu/artifactory/libs-release-local</url>
         </repository>
         <snapshotRepository>
             <id>itr-snapshots</id>
-            <name>USE2GO Snapshot Repository</name>
+            <name>ITR Snapshots Repository</name>
             <url>https://repo.itrespublica.eu/artifactory/libs-snapshot-local</url>
         </snapshotRepository>
     </distributionManagement>
