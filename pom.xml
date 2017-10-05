@@ -47,4 +47,17 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>itr-releases</id>
+            <name>USE2GO Release Repository</name>
+            <url>https://repo.itrespublica.eu/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>itr-snapshots</id>
+            <name>USE2GO Snapshot Repository</name>
+            <url>https://repo.itrespublica.eu/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
