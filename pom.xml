@@ -32,8 +32,8 @@
                     <artifactId>org.apache.maven.plugins</artifactId>
                     <version>RELEASE</version>
                     <configuration>
-                        <tagNameFormat>v@{project.version}</tagNameFormat>
-                        <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <tagNameFormat>v@{version}</tagNameFormat>
+                        <autoVersionSubmodules>false</autoVersionSubmodules>
                         <releaseProfiles>releases</releaseProfiles>
                     </configuration>
                     <dependencies>
